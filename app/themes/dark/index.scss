@@ -1,0 +1,118 @@
+body {
+  background: #363636;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+h2 {
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 0;
+}
+
+code {
+  background: rgba(128, 128, 128, 0.25);
+  padding: 1px 3px;
+  border-radius: 2px;
+}
+
+.cxb-tasklist {
+  border-right: 1px solid rgba(128, 128, 128, 0.1);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+}
+
+.cxe-tasklist-header {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.cxe-tasklist-add {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.cxb-task {
+  a {
+    color: #00c1ff;
+  }
+}
+
+.cxe-layout-header {
+
+  border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+
+  a {
+    text-decoration: none;
+  }
+
+  .cxm-active {
+    color: white;
+    background: rgba(128, 128, 128, 0.5) !important;
+  }
+
+  .cxm-active.cxs-cursor {
+    color: white;
+    background: rgba(123, 190, 255, 0.6) !important;
+  }
+}
+
+.cxb-help {
+  code {
+    background: rgba(128, 128, 128, 0.25);
+    border-radius: 2px;
+    padding: 5px;
+  }
+
+  hr {
+    border-top: none;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1);
+    margin: 2rem 0;
+  }
+}
+
+.cxb-dragclone {
+  background: rgba(black, 0.1);
+}
+
+.cxb-dropzone.cxm-block {
+  box-sizing: border-box;
+
+  &.cxs-over {
+    border: 1px dotted rgba(white, 0.1);
+  }
+}
+
+.cxe-window-body {
+  background: gray;
+}
+
+.cxb-dropdown {
+  background: #444444;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+::-webkit-scrollbar:vertical {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}

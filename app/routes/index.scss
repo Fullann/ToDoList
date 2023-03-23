@@ -1,0 +1,90 @@
+.cxb-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%
+}
+
+.cxe-layout-header {
+  display: flex;
+  padding: 1rem;
+  flex-shrink: 0;
+
+  .spacer {
+    width: 6rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  a {
+    padding: 0.5rem 1rem;
+  }
+}
+
+.cxe-layout-main {
+  flex: 1 1 0%;
+  overflow: auto;
+  width: 100%;
+}
+
+.cxb-textfield.cxm-search {
+  margin: 0 2em;
+  width: 20rem;
+
+  @media screen and (max-width: 1200px) {
+    width: auto;
+    flex: 1;
+  }
+
+  transition: width 0.5s;
+
+  &:placeholder-shown {
+    width: 10rem;
+  }
+
+  .cxe-textfield-input {
+    background: transparent;
+    color: inherit;
+    border: none;
+    height: auto;
+  }
+}
+
+.cxb-button.cxm-login-primary {
+  width: 200px;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.cxb-menuitem.cxs-small-padding {
+  > .cxe-menuitem-arrow {
+    right: 0;
+  }
+}
+
+.cxb-menuitem.cxs-medium-padding {
+  > a {
+    margin-top: 5px;
+  }
+}
+
+.cxb-dropdown {
+  font-size: 12px;
+}
+
+.cxe-labelstoplayout-field {
+  vertical-align: middle;
+}
+
+pre {
+  overflow: hidden;
+}
+
+@import "board/index";
+@import "settings/index";
+@import "help/index";
+@import "new/index";

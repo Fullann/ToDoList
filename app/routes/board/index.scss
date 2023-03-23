@@ -1,0 +1,158 @@
+.cxe-taskboard-loading,
+.cxe-taskboard-error {
+  padding: 3rem;
+}
+
+.cxe-taskboard-lists {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 700px) {
+    display: flex;
+  }
+}
+
+.cxb-tasklist {
+  padding: 1rem 1rem;
+
+  @media screen and (min-width: 700px) {
+    width: 29rem;
+  }
+}
+
+.cxe-tasklist-header {
+  display: flex;
+  padding-left: 10px;
+  cursor: move;
+
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: normal;
+    flex: 1;
+  }
+
+  a {
+    transform: scaleX(-1);
+    opacity: 0.5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+}
+
+.cxe-tasklist-items {
+  margin: 0 0 1rem 0;
+}
+
+.cxe-tasklist-add {
+  display: block;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+
+.menu-item {
+  .drag-icon {
+    visibility: hidden;
+  }
+  &:hover .drag-icon {
+    visibility: visible;
+  }
+}
+
+.cxb-task {
+  border: 1px solid transparent;
+  margin: -1px;
+  width: 100%;
+  display: inline-block;
+
+  &:focus {
+    outline: none;
+  }
+
+  padding: 0 0.5rem 0 2.5rem;
+  transition: max-height 0.2s;
+
+
+  p {
+    margin: 6px 0 6px 0;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+
+  .cxe-checkbox-input {
+    position: absolute;
+    left: 12px;
+    top: 6px;
+  }
+
+  textarea {
+    width: 100%;
+    background: none;
+    color: white;
+    border: none;
+    font-family: inherit;
+    word-wrap: break-word;
+    padding: 6px 0 3px;
+    font-size: inherit;
+    overflow: hidden;
+    display: block;
+    box-sizing: border-box;
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  ul, ol {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.cxe-task-content {
+  
+  .cxb-task.cxs-completed & {
+    opacity: 0.3;
+  }
+}
+
+.cxb-listeditor {
+  animation-name: maxHeight1000;
+  animation-duration: 1s;
+  overflow: hidden;
+}
+
+@keyframes maxHeight1000 {
+  from { max-height: 0; }
+  to { max-height: 1000px; }
+}
+
+.cxe-tooltip-arrow-fill {
+  color: rgba(110, 110, 110, 0.9);
+}
+
+.cxe-tooltip-arrow-border {
+  color: rgba(110, 110, 110, 0.9);
+}
+
+.cxb-tooltip {
+  background-color: rgba(80, 80, 80, 1);
+  border: 1px solid rgba(128,128,128,0.6);
+  font-size: 95%;
+}

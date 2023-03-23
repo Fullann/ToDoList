@@ -1,0 +1,21 @@
+{
+    "name": "tdo",
+    "short_name": "tdo",
+    "theme_color": "#363636",
+    "background_color": "rgba(54,54,54,0.9)",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "/assets/favicon.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/tdo512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+  }
