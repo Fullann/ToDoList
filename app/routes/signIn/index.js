@@ -20,17 +20,8 @@ export default
                     <LinkButton mod="login-primary" href="#" onClick="signInWithGoogle">
                         SignIn with Google
                     </LinkButton>
-                    <LinkButton mod="login-primary" href="#" onClick="signInWithFacebook">
-                        SignIn with Facebook
-                    </LinkButton>
-                    <LinkButton mod="login-primary" href="#" onClick="signInWithTwitter">
-                        SignIn with Twitter
-                    </LinkButton>
                     <LinkButton mod="login-primary" href="#" onClick="signInWithGitHub">
                         SignIn with Github
-                    </LinkButton>
-                    <LinkButton mod="login-primary" href="#" onClick="signInWithMicrosoft">
-                        SignIn with Microsoft
                     </LinkButton>
                 </div>
             </form>

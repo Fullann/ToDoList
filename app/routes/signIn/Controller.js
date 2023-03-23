@@ -21,27 +21,9 @@ export default class extends Controller {
         this.signInWithProvider(provider);
     }
 
-    signInWithFacebook(e) {
-        e.preventDefault();
-        let provider = new firebase.auth.FacebookAuthProvider();
-        this.signInWithProvider(provider);
-    }
-
-    signInWithTwitter(e) {
-        e.preventDefault();
-        let provider = new firebase.auth.TwitterAuthProvider();
-        this.signInWithProvider(provider);
-    }
-
     signInWithGitHub(e) {
         e.preventDefault();
         let provider = new firebase.auth.GithubAuthProvider();
-        this.signInWithProvider(provider);
-    }
-
-    signInWithMicrosoft(e) {
-        e.preventDefault();
-        let provider = new firebase.auth.OAuthProvider('microsoft.com');
         this.signInWithProvider(provider);
     }
 
