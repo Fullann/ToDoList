@@ -4,7 +4,7 @@
   "description": "TODO list",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config config/webpack.dev.js --open --env goal=local --env production --progress",
+    "start": "webpack serve --config config/webpack.dev.js --open",
     "build": "webpack --config config/webpack.prod.js",
     "build:extension": "webpack --config config/webpack.extension.js"
   },
