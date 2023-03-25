@@ -2,6 +2,7 @@ const webpack = require('webpack'),
     HtmlWebpackPlugin = require('html-webpack-plugin'),
     path = require('path'),
     babelCfg = require("./babel.config"),
+    Dotenv = require('dotenv-webpack')
     paths = {
         root: path.join(__dirname, '../'),
         app: path.join(__dirname, '../app/'),
@@ -50,6 +51,7 @@ module.exports = {
         //     names: ["vendor"],
         //     minChunks: Infinity
         // }),
+        new Dotenv(),
         new HtmlWebpackPlugin({
             template: paths.app + 'index.html'
         }),
