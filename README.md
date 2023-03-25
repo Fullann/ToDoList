@@ -17,7 +17,7 @@ Configurer votre base de donnée firebase
 // Copier le .env.example
 cp .env.example .env
 ```
-Introduire les donnée de connexion mise sur [firebase](https://firebase.google.com/).(N'oublier pas d'activer l'autentification et les types de connexion que vous souhaiter. Sur le projet seulment en anonyme et google son mis).\n
+Introduire les donnée de connexion mise sur [firebase](https://firebase.google.com/).(N'oublier pas d'activer l'autentification et les types de connexion que vous souhaiter. Sur le projet seulment en anonyme et google son mis).<br>
 Puis start le projet
 ```
 yarn start
