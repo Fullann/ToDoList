@@ -6,7 +6,7 @@ try {
 	});
 
 	chrome.contextMenus.onClicked.addListener(function (info, tab) {
-		console.log(info);
+		//console.log(info);
 		switch (info.menuItemId) {
 			case 'launch_tdo_on_tab':
 				chrome.tabs.create({ url: 'index.html', active: true });

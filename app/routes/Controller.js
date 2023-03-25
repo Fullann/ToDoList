@@ -41,6 +41,22 @@ export default ({ store, get, set, init }) => {
 
                 if (!user) {
                     this.signInAnonymously();
+
+                    Toast.create({
+                        mod: "error",
+                        style: "padding: 0",
+                        timeout: 4000,
+                        items: (
+                            <cx>
+                                <div style="display: flex">
+                                    <div style="padding: 8px">
+                                        <Text value="Vous devez être connecter pour utiliser cette application" />
+                                    </div>
+                                    
+                                </div>
+                            </cx>
+                        )
+                    }).open()
                     return;
                 }
 
@@ -101,6 +117,7 @@ export default ({ store, get, set, init }) => {
         },
 
         signInAnonymously() {
+
             firebase.auth().signInAnonymously();
         },
 

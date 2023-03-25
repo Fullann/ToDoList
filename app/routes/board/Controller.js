@@ -86,7 +86,7 @@ export default ({ store, ref, get, set }) => {
             () => {
                 if (nextTask) {
                     activateTask(nextTask.id);
-                    console.log(nextTask);
+                    //console.log(nextTask);
                 }
             }
         );
